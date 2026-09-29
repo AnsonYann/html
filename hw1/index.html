@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>火拳艾斯 - 波特卡斯·D·艾斯 紀念網頁</title>
+  <style>
+    /* 豐富的背景設計：黑紅火焰漸層 */
+    body {
+      font-family: "Microsoft JhengHei", "PingFang TC", sans-serif;
+      background: linear-gradient(135deg, #1a0000 0%, #4d0a00 50%, #1a0000 100%);
+      color: #fdfdfd;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+    }
+
+    /* 網頁主要容器，限制最大寬度並置中 */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      background-color: rgba(0, 0, 0, 0.6); /* 半透明黑色底色，讓文字更好閱讀 */
+      box-shadow: 0 0 20px rgba(255, 69, 0, 0.3);
+    }
+
+    /* 標題設計 */
+    h1 {
+      text-align: center;
+      color: #ff6a00;
+      border-bottom: 2px solid #ff4500;
+      padding-bottom: 10px;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    }
+    h2 {
+      color: #ffb700;
+      border-left: 5px solid #ff4500;
+      padding-left: 10px;
+      margin-top: 40px;
+    }
+
+    /* 圖片設定 */
+    .hero-img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+      margin-bottom: 20px;
+    }
+
+    /* 基本資料區塊（卡片設計） */
+    .profile-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 69, 0, 0.3);
+      margin-bottom: 20px;
+    }
+    .profile-card ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .profile-card li {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+    .highlight {
+      color: #ff6a00;
+      font-weight: bold;
+    }
+
+    /* 按鈕設計 */
+    .btn-container {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .fire-btn {
+      background: linear-gradient(90deg, #ff4500, #ff8c00);
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      font-weight: bold;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .fire-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #ff8c00;
+    }
+
+    /* 影片與地圖響應式容器 (16:9) */
+    .iframe-wrapper {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      margin-top: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+    }
+    .iframe-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* 頁尾設定 */
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid #444;
+      color: #aaa;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🔥 波特卡斯·D·艾斯 (Portgas D. Ace) 🔥</h1>
+
+    <!-- 圖片區塊 -->
+    <img class="hero-img" src="ace.jpg" alt="火拳艾斯">
+    
+    <!-- 文字介紹區塊 -->
+    <h2>📖 角色檔案</h2>
+    <div class="profile-card">
+      <ul>
+        <li><span class="highlight">稱號：</span>火拳艾斯</li>
+        <li><span class="highlight">懸賞金：</span>5億5,000萬貝里</li>
+        <li><span class="highlight">惡魔果實：</span>自然系「燒燒果實」</li>
+        <li><span class="highlight">所屬：</span>白鬍子海賊團第二隊隊長</li>
+        <li><span class="highlight">身世：</span>海賊王「哥爾·D·羅傑」的遺腹子，魯夫的義兄。</li>
+      </ul>
+    </div>
+
+    <h2>🔥 人生與故事</h2>
+    <p>
+      艾斯出生於南海，與魯夫、薩波在東海的科爾波山結為義兄弟。他出海後迅速揚名，並成立了黑桃海賊團，後來被「白鬍子」艾德華·紐蓋特的魅力所折服，成為了白鬍子海賊團的第二隊隊長。
+    </p>
+    <p>
+      他的一生短暫卻如火焰般耀眼。在震驚世界的「頂上戰爭」中，為了保護心愛的弟弟魯夫，艾斯用身體擋下了海軍上將赤犬的致命一擊，帶著不留遺憾的笑容離開了人世。他臨終前的那句：「謝謝你們...一直以來如此愛著我！」成為了海賊王中最賺人熱淚的名言之一。
+    </p>
+
+    <!-- 按鈕區塊 (使用JavaScript加入互動效果) -->
+    <div class="btn-container">
+      <button class="fire-btn" onclick="alert('「謝謝你們...一直以來如此愛著我！」—— 艾斯')">點擊點燃炎之意志</button>
+    </div>
+
+    <!-- 影片區塊 (YouTube iframe) -->
+    <h2>🎬 經典回顧影片</h2>
+    <p>一起來回顧火拳艾斯在動漫中的經典戰鬥與感人瞬間：</p>
+    <div class="iframe-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VOOX8pk8bg4?si=H817c9c17yKrwQzd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="iframe-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/C3y3D8VmmR4?si=xiZFtyxiKFRKLeY_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <!-- 地圖區塊 (Google Maps iframe) -->
+    <h2>🗺️ 巡禮地圖：東京鐵塔海賊王主題樂園(舊址)</h2>
+    <p>雖然海賊王的世界是虛構的，但現實中許多海賊王迷都會前往東京鐵塔朝聖！</p>
+    <div class="iframe-wrapper">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.74751433221!2d139.74285797578648!3d35.65858047259461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2z5p2x5Lqs6ZC15aGU!5e0!3m2!1szh-TW!2stw!4v1695279612345!5m2!1szh-TW!2stw" title="東京鐵塔地圖" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- 頁尾區塊 -->
+    <footer>
+      <p>本網站為課堂練習作品，致敬偉大的海賊王與火拳艾斯。</p>
+    </footer>
+  </div>
+
+</body>
+</html>
