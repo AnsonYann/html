@@ -6,12 +6,11 @@
   <title>火拳艾斯 - 波特卡斯·D·艾斯 紀念網頁</title>
   <style>
     /* 豐富的背景設計：動態流動的黑紅火焰漸層 */
+    /* 穩定好看的黑紅白煙火焰背景 */
     body {
       font-family: "Microsoft JhengHei", "PingFang TC", sans-serif;
-      /* 將漸層拉長並增加顏色層次，讓動畫看起來更順暢 */
-      background: linear-gradient(135deg, #1a0000, #660e00, #a31800, #660e00, #1a0000);
-      background-size: 400% 400%; /* 放大背景以便移動 */
-      animation: fireFlow 12s ease infinite; /* 套用流動動畫，12秒循環一次 */
+      background: radial-gradient(circle at center, #3a0800 0%, #120000 70%, #050000 100%);
+      background-attachment: fixed; /* 讓背景固定，滾動時質感更好 */
       color: #fdfdfd;
       margin: 0;
       padding: 0;
@@ -25,20 +24,40 @@
       100% { background-position: 0% 50%; }
     }
 
-    /* 網頁主要容器，限制最大寬度並置中 */
+    /* 網頁主要容器，限制最大寬度並置中（強化高亮度火焰光暈） */  
     .container {
       max-width: 800px;
-      margin: 0 auto;
+      margin: 30px auto;
       padding: 30px 20px;
-      background-color: rgba(0, 0, 0, 0.7); /* 微調透明度讓文字更清晰 */
-      /* 套用火焰呼吸光暈動畫 */
-      animation: boxGlow 3s ease-in-out infinite alternate;
+      background-color: rgba(10, 0, 0, 0.75); /* 微調透明度讓文字更清晰 */
+      border-radius: 15px;
+      border: 1px solid rgba(255, 106, 0, 0.6);
+      /* 多重強光陰影：內發光 + 亮橘外發光 + 火焰紅大範圍擴散光 */
+      box-shadow: 
+        inset 0 0 20px rgba(255, 100, 0, 0.4),
+        0 0 25px rgba(255, 69, 0, 0.8),
+        0 0 50px rgba(255, 140, 0, 0.6),
+        0 0 90px rgba(200, 0, 0, 0.4);
+      /* 套用火焰呼吸強光動態特效 */
+      animation: superFireGlow 2.5s ease-in-out infinite alternate;
     }
 
-    /* 容器火焰呼吸光暈的動畫設定 */
-    @keyframes boxGlow {
-      from { box-shadow: 0 0 15px rgba(255, 69, 0, 0.3); }
-      to { box-shadow: 0 0 35px rgba(255, 69, 0, 0.8), 0 0 60px rgba(255, 0, 0, 0.4); }
+    /* 容器火焰呼吸強光動畫 */
+    @keyframes superFireGlow {
+      from {
+        box-shadow: 
+          inset 0 0 15px rgba(255, 100, 0, 0.3),
+          0 0 20px rgba(255, 69, 0, 0.7),
+          0 0 40px rgba(255, 140, 0, 0.5),
+          0 0 70px rgba(200, 0, 0, 0.3);
+      }
+      to {
+        box-shadow: 
+          inset 0 0 30px rgba(255, 150, 0, 0.6),
+          0 0 35px rgba(255, 69, 0, 1),
+          0 0 70px rgba(255, 140, 0, 0.8),
+          0 0 120px rgba(255, 30, 0, 0.6);
+      }
     }
 
     /* 標題設計 */
